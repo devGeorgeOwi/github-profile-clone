@@ -16,6 +16,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 header {
@@ -192,3 +194,132 @@ header {
     border-radius: 50%;
 }
 
+
+/* profile tabs */
+.repo-container {
+    position: relative;
+}
+.repo-container .profile-tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    position: absolute;
+    top: 1.5rem;
+    left: 26rem;
+}
+.repo-container li {
+    float:left;
+    padding-right:45px;
+    display:block;
+}
+.repo-container li:nth-child(2) {
+    padding-left: 16px;
+}
+.repo-container li:nth-child(3) {
+    padding-left: 28px;
+}
+.repo-container li:nth-child(4) {
+    padding-left: 12px;
+}
+.profile-tabs li a {
+    text-decoration: none;
+    color: #7c7e80;
+    font-size: 14px;
+   
+}
+
+.overview {
+    position: absolute;
+    left: -1.5rem;
+    top: 0.2rem;
+}
+.repository {
+    position: absolute;
+    left: 6rem;
+    top: 0.2rem;
+}
+.repo-count {
+    background-color: #c8c9ca;
+    border-radius: 20px;
+    position: absolute;
+    top: .3rem;
+    left: 12.5rem;
+    width: 4%;
+    height: 14px;
+}
+.counter {
+    position: absolute;
+    font-size: 10px;
+    top: -0.3rem;
+    left: 12.7rem;
+}
+.project {
+    position: absolute;
+    left: 15.4rem;
+    top: 0.2rem;
+}
+.package {
+    position: absolute;
+    left: 22.2rem;
+    top: 0.2rem;
+}
+
+.top-divider {
+    position: relative;
+    top: 4.3rem;
+    border: 1px solid #c8c9ca;
+}
+
+/* 3rd div */
+.filter-repo {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10rem;
+    left: 23rem;
+}
+
+.find-repo {
+    width: 34rem;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid  #c8c9ca;
+    outline-color: rgb(20, 167, 224);
+}
+.find-repo::placeholder { 
+    color: #7c7e80;
+    opacity: 1;
+  }
+  
+  .find-repo:-ms-input-placeholder { 
+    color: #7c7e80;
+  }
+  
+  .find-repo::-ms-input-placeholder { 
+    color:#7c7e80;
+  }
+
+  .select-type {
+      position: absolute;
+  }
+  .select-language {
+    position: absolute;
+    left: 42rem;
+}
+  
+
+  .create-repo {
+    padding: 8px 20px 8px 30px;
+    background: #2ea44f;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 17rem;
+  }
+  .new-repo {
+    position: absolute;
+    left: 37.4rem;
+    top: 0.6rem;
+  }

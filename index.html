@@ -56,7 +56,78 @@
         </nav>
     </header>
     <main>
+        <div class="repo-container">
+            <ul class="profile-tabs">
+                <li>
+                    <a href="#">
+                        <img src="/assets/image/book-16 (1).svg" alt="overview" class="overview">
+                        Overview
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/assets/image/repo-16.svg" alt="repository" class="repository">
+                        Repositories
+                    </a>
+                    <span class="repo-count">
+                    </span>
+                    <p class="counter">48</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/assets/image/project-16.svg" alt="project" class="project">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/assets/image/package-16.svg" alt="package" class="package">
+                        Packages
+                    </a>
+                </li>
+            </ul>
+            <hr class="top-divider">
+        </div>
+            
+        <div class="filter-repo">
+            <form action="#">
+                <input type="text" placeholder="Find a repository...." class="find-repo"> 
+            </form>
 
+            <div class="select-type">
+                <select>
+                  <option value="0">Type: All</option>
+                  <option value="1">Select type<span>X</span></option>
+                  <option value="2">All</option>
+                  <option value="3">Public</option>
+                  <option value="4">Private</option>
+                  <option value="5">Sources</option>
+                  <option value="6">Forks</option>
+                  <option value="7">Archived</option>
+                  <option value="8">Mirrors</option>
+                </select>
+            </div>
+
+            <div class="select-language">
+                <select>
+                    <option value="0">Language: All</option>
+                    <option value="1">Select language<span>X</span></option>
+                    <option value="2">All</option>
+                    <option value="3">CSS</option>
+                    <option value="4">HTML</option>
+                    <option value="5">JavaScript</option>
+                    <option value="6">Vue</option>
+                    <option value="7">Python</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="create-repo">
+                    <img src="/assets/image/repo-16 (1).svg" alt="repository" class="new-repo">
+                    New
+                </button>
+            </div>
+        </div> 
     </main>
     <footer>
 
